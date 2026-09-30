@@ -22,7 +22,7 @@ React · React Bootstrap · Bootstrap · JavaScript · CSS
 **Prerequisites:** Node.js
 
 ```bash
-git clone https://github.com/Archils/Archils-Portfolio.git
+git clone https://github.com/Archo2/Archils-Portfolio.git
 cd Archils-Portfolio
 npm install
 npm start
@@ -47,5 +47,5 @@ Then open http://localhost:3000.
 ## Author
 
 **Archils Oburu**
-- GitHub: [@Archils](https://github.com/Archils)
+- GitHub: [@Archo2](https://github.com/Archo2)
 - Email: oburuarchils@gmail.com
