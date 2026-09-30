@@ -1,16 +1,51 @@
-https://portfolio-archils.herokuapp.com/
+# Archils Oburu: Developer Portfolio (React)
 
-A simple Portfolio template for developer/designers built with React. Use it to showcase my work, testimonials,contacts and other information to clients, built with react js.
+My personal portfolio, built with React, showcasing my projects, skills, education, work experience and contact details. Includes a downloadable resume.
 
-<img width="1792" alt="Screen Shot 2022-02-07 at 4 35 53 PM" src="https://user-images.githubusercontent.com/87740574/156897561-461dbbd9-8b42-420e-9895-0aab9c113c47.png">
+> The original Heroku deployment is no longer available because Heroku ended its free tier. Follow **Getting Started** to run it locally.
 
+## Sections
 
-<img width="1792" alt="Screen Shot 2022-02-03 at 11 42 13 AM" src="https://user-images.githubusercontent.com/87740574/156897374-db877e0e-f47c-4cca-ae7c-2d18d600ad42.png">
+- About me
+- Projects, with screenshots and links to the code and live demos
+- Skills
+- Education and experience
+- Resume download
+- Contact
 
-<img width="1792" alt="Screen Shot 2022-02-03 at 11 42 42 AM" src="https://user-images.githubusercontent.com/87740574/152429911-96878167-2f10-439d-88c4-8440a88e2305.png">
+## Built With
 
-<img width="1792" alt="Screen Shot 2022-02-03 at 11 43 19 AM" src="https://user-images.githubusercontent.com/87740574/152429554-19273fdf-dce5-472e-8946-81e5f729b384.png">
+React · React Bootstrap · Bootstrap · JavaScript · CSS
 
-<img width="1792" alt="Screen Shot 2022-02-03 at 11 43 03 AM" src="https://user-images.githubusercontent.com/87740574/156897405-fa900a77-e830-40fd-81cd-2eda8a63742d.png">
+## Getting Started
 
-<img width="1792" alt="Screen Shot 2022-02-07 at 4 36 35 PM" src="https://user-images.githubusercontent.com/87740574/156897436-9aee5014-1c34-4362-945a-9ac6ae3e356e.png">
+**Prerequisites:** Node.js
+
+```bash
+git clone https://github.com/Archils/Archils-Portfolio.git
+cd Archils-Portfolio
+npm install
+npm start
+```
+
+Then open http://localhost:3000.
+
+## Screenshots
+
+<img width="800" alt="Screenshot" src="https://user-images.githubusercontent.com/87740574/156897561-461dbbd9-8b42-420e-9895-0aab9c113c47.png">
+
+<img width="800" alt="Screenshot" src="https://user-images.githubusercontent.com/87740574/156897374-db877e0e-f47c-4cca-ae7c-2d18d600ad42.png">
+
+<img width="800" alt="Screenshot" src="https://user-images.githubusercontent.com/87740574/152429911-96878167-2f10-439d-88c4-8440a88e2305.png">
+
+<img width="800" alt="Screenshot" src="https://user-images.githubusercontent.com/87740574/152429554-19273fdf-dce5-472e-8946-81e5f729b384.png">
+
+<img width="800" alt="Screenshot" src="https://user-images.githubusercontent.com/87740574/156897405-fa900a77-e830-40fd-81cd-2eda8a63742d.png">
+
+<img width="800" alt="Screenshot" src="https://user-images.githubusercontent.com/87740574/156897436-9aee5014-1c34-4362-945a-9ac6ae3e356e.png">
+
+## Author
+
+**Archils Oburu**
+- GitHub: [@Archils](https://github.com/Archils)
+- Email: oburuarchils@gmail.com
