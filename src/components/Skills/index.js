@@ -1,41 +1,24 @@
 import React from "react";
-function Skills (){
-    return(
-        <section>
-    <div className="skills-section">
-        <h1 className="heading">Skills</h1>
-        <div className="skills-container">
-            <div className="skills-card">
-                <img src="images/html.png" className="skill-img" alt=""/>
-                <div className="skill-level">95%</div>
-                <h1 className="skill-name">HTML</h1>
-                <p className="skil-info">HTML, or Hypertext Markup Language.</p>
+import { skills } from "../../utils/profile";
 
-            </div>
-            <div className="skills-card">
-                <img src="images/reactjs.png" className="skill-img" alt=""/>
-                <div className="skill-level">85%</div>
-                <h1 className="skill-name">reactjs</h1>
-                <p className="skil-info">Front-End JavaScript library for building user interfaces</p>
-
-            </div>
-            <div className="skills-card">
-                <img src = "" className="skill-img" alt=""/>
-                <div className="skill-level">95%</div>
-                <h1 className="skill-name">CSS</h1>
-                <p className="skil-info">Cascading Style Sheets, or CSS</p>
-
-            </div>
-            <div className="skills-card">
-                <img src="images/nodejs.png" className="skill-img" alt=""/>
-                <div className="skill-level">85%</div>
-                <h1 className="skill-name">nodejs</h1>
-                <p className="skil-info">Back-end JavaScript runtime environment</p>
-            </div>
-            
-        </div>
-    </div>
-</section>
-    )
+function Skills() {
+  return (
+    <section id="skills" className="section">
+      <h2 className="section-title">Skills</h2>
+      <div className="skills-grid">
+        {skills.map((s) => (
+          <div className="skill-card" key={s.group}>
+            <h3>{s.group}</h3>
+            <ul className="tags">
+              {s.items.map((it) => (
+                <li key={it}>{it}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
-export default Skills
+
+export default Skills;
