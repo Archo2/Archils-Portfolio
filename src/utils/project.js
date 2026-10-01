@@ -2,6 +2,15 @@ const GH = "https://github.com/Archo2";
 
 const projects = [
   {
+    _id: 10,
+    title: "Wachara Wi-Fi",
+    category: "Networking and payments",
+    about:
+      "Pay-as-you-go Wi-Fi hotspot for Wachara village, Kenya. A MikroTik captive portal lets users buy time with M-Pesa STK Push; the server opens and closes router access automatically, saves remaining time if a device loses power, and includes an admin dashboard for sessions and revenue.",
+    tech: ["Node.js", "Express", "MySQL", "M-Pesa Daraja", "MikroTik", "Nginx"],
+    repo: `${GH}/Wachara-WiFi`,
+  },
+  {
     _id: 1,
     title: "Azure VM: Secured Nextcloud Server",
     category: "Cloud and security",
