@@ -1,16 +1,26 @@
-import React from "react"
+import React from "react";
 
-function Navbar(props){
+const links = [
+  { href: "#about", label: "About" },
+  { href: "#experience", label: "Experience" },
+  { href: "#skills", label: "Skills" },
+  { href: "#projects", label: "Projects" },
+  { href: "#contact", label: "Contact" },
+];
 
-return(
-<nav className="navbar">
-    <ul class="link-group">
-        <li className="link active"><a href="#home-section">Home</a></li>
-        <li className="link"><a href="#project-section">Projects</a></li>
-        <li className="link"><a href="#about-section">About</a></li>
-        <li className="link"><a href="#contact-section">Contact</a></li>
-        
-    </ul>
-</nav>
-)}
-export default Navbar
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <a className="brand" href="#home">Archils Oburu</a>
+      <ul className="link-group">
+        {links.map((l) => (
+          <li key={l.href}>
+            <a href={l.href}>{l.label}</a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+}
+
+export default Navbar;
