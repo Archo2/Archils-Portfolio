@@ -1,21 +1,32 @@
-import React from"react";
+import React from "react";
 
-function Projects({projectProps}){
- //console.log(projectProps);
-return (
-    <div className="project-card">
-           <div className="project-content">
-               <img src={projectProps.src} className= "project-img"alt=""></img>
-               <h1 className="project-title">{projectProps.title}</h1>
-               <p className="project-info">
-                {projectProps.about}
-               </p>
-               <div className="project-btn-grp">
-                <button className="project-btn github"><a href ={projectProps.repo}>repo</a></button>
-                <button className="project-btn see live"><a href ={projectProps.deploy}>see live </a></button>
-                </div>
-            </div> 
-    </div>
-)}
+function Projects({ projectProps: p }) {
+  return (
+    <article className="project-card">
+      <div className="project-body">
+        <p className="eyebrow">{p.category}</p>
+        <h3>{p.title}</h3>
+        <p>{p.about}</p>
+        <ul className="tags small">
+          {p.tech.map((t) => (
+            <li key={t}>{t}</li>
+          ))}
+        </ul>
+        <div className="project-links">
+          {p.repo && (
+            <a href={p.repo} target="_blank" rel="noopener noreferrer">
+              Code
+            </a>
+          )}
+          {p.deploy && (
+            <a href={p.deploy} target="_blank" rel="noopener noreferrer">
+              Live demo
+            </a>
+          )}
+        </div>
+      </div>
+    </article>
+  );
+}
 
-export default Projects
+export default Projects;
