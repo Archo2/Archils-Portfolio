@@ -19,6 +19,25 @@ function initialTheme() {
 
 function Navbar() {
   const [theme, setTheme] = useState(initialTheme);
+  const [active, setActive] = useState("");
+
+  useEffect(() => {
+    if (!("IntersectionObserver" in window)) return undefined;
+    const ids = links.map((l) => l.href.slice(1));
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) setActive(e.target.id);
+        });
+      },
+      { rootMargin: "-40% 0px -55% 0px" }
+    );
+    ids.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) io.observe(el);
+    });
+    return () => io.disconnect();
+  }, []);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -37,7 +56,7 @@ function Navbar() {
       <ul className="link-group">
         {links.map((l) => (
           <li key={l.href}>
-            <a href={l.href}>{l.label}</a>
+            <a href={l.href} className={active === l.href.slice(1) ? "active" : undefined} aria-current={active === l.href.slice(1) ? "true" : undefined}>{l.label}</a>
           </li>
         ))}
       </ul>

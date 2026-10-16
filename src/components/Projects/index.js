@@ -48,7 +48,10 @@ function Projects({ projectProps: p }) {
         <Art category={p.category} />
       )}
       <div className="project-body">
-        <p className="eyebrow">{p.category}</p>
+        <p className="eyebrow">
+          {p.category}
+          {p.featured && <span className="featured">Featured</span>}
+        </p>
         <h3>{p.title}</h3>
         <p>{p.about}</p>
         <ul className="tags small">

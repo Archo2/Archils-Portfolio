@@ -10,6 +10,15 @@ export const contact = {
   github: "https://github.com/Archo2",
 };
 
+export const availability = "Open to IT support, technical support and cybersecurity roles · Everett, WA · On-site, hybrid or remote";
+
+export const stats = [
+  { value: "20%", label: "team efficiency gain at Bucher Aerospace in six months" },
+  { value: "4 yrs", label: "troubleshooting hardware, software and connectivity issues" },
+  { value: "7", label: "certifications earned, with Security+ in progress" },
+  { value: "5", label: "languages spoken, including Swahili and Luganda" },
+];
+
 export const summary = [
   "Technical support professional with four years of experience troubleshooting hardware, software and connectivity issues and owning escalated cases through to resolution.",
   "At Bucher Aerospace I built a searchable issue-and-resolution database that improved team efficiency by 20% in six months, and I write the documentation colleagues rely on.",
