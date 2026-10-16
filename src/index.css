@@ -427,6 +427,9 @@ a {
   color: var(--muted);
   font-size: 15px;
 }
+.quote-context {
+  font-size: 13px;
+}
 .placeholder {
   background: var(--badge-bg);
   color: var(--badge-ink);

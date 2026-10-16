@@ -19,7 +19,7 @@ function Testimonials() {
         ))}
       </ul>
 
-      <h3 className="subhead">What people say</h3>
+      <h3 className="subhead">What people say about working with me</h3>
       <div className="quote-grid">
         {testimonials.map((t, i) => (
           <figure className="quote" key={i}>
@@ -27,14 +27,22 @@ function Testimonials() {
               <Wrap placeholder={t.placeholder}>{t.quote}</Wrap>
             </blockquote>
             <figcaption>
-              <Wrap placeholder={t.placeholder}>{t.name}</Wrap>
-              {" "}
+              <strong>
+                <Wrap placeholder={t.placeholder}>{t.name}</Wrap>
+              </strong>
+              <br />
               <Wrap placeholder={t.placeholder}>{t.role}</Wrap>
+              {t.context && (
+                <>
+                  <br />
+                  <span className="quote-context">{t.context}</span>
+                </>
+              )}
             </figcaption>
           </figure>
         ))}
       </div>
-      <p className="fine-print">Add testimonials only with the writer's permission.</p>
+      <p className="fine-print">Recommendations received on LinkedIn.</p>
     </section>
   );
 }
