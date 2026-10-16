@@ -15,6 +15,7 @@ const projects = [
       "Pay-as-you-go Wi-Fi hotspot for Wachara village, Kenya. A MikroTik captive portal lets users buy time with M-Pesa STK Push; the server opens and closes router access automatically, saves remaining time if a device loses power, and includes an admin dashboard for sessions and revenue.",
     tech: ["Node.js", "Express", "MySQL", "M-Pesa Daraja", "MikroTik", "Nginx"],
     repo: `${GH}/Wachara-WiFi`,
+    deploy: "https://wachara-wi-fi.vercel.app",
   },
   {
     _id: 1,
