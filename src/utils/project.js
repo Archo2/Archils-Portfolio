@@ -1,18 +1,29 @@
+import interactor from "../Assets/images/InterActor.png";
+import bookSearch from "../Assets/images/booksearch.png";
+import techBlog from "../Assets/images/Tech-Blog.gif";
+import workout from "../Assets/images/workout-Track.png";
+import weather from "../Assets/images/weather-Dashboard.png";
+
 const GH = "https://github.com/Archo2";
 
 const projects = [
   {
     _id: 10,
     title: "Wachara Wi-Fi",
+    featured: true,
     category: "Networking and payments",
     about:
       "Pay-as-you-go Wi-Fi hotspot for Wachara village, Kenya. A MikroTik captive portal lets users buy time with M-Pesa STK Push; the server opens and closes router access automatically, saves remaining time if a device loses power, and includes an admin dashboard for sessions and revenue.",
     tech: ["Node.js", "Express", "MySQL", "M-Pesa Daraja", "MikroTik", "Nginx"],
     repo: `${GH}/Wachara-WiFi`,
+    deploy: "https://wachara-wi-fi.vercel.app",
+    // Add admin dashboard screenshots here once exported, e.g.
+    // screenshots: [{ src: adminOverview, alt: "Admin dashboard: sessions and revenue" }],
   },
   {
     _id: 1,
     title: "Azure VM: Secured Nextcloud Server",
+    featured: true,
     category: "Cloud and security",
     about:
       "Deployed an Ubuntu Server VM inside an Azure virtual network, locked down the subnet with a Network Security Group, connected through Azure Bastion instead of exposing SSH, then installed Nextcloud with a public IP and DNS label.",
@@ -30,6 +41,8 @@ const projects = [
   {
     _id: 3,
     title: "InterActor",
+    featured: true,
+    image: interactor,
     category: "Full-stack capstone",
     about:
       "University of Washington capstone team project. A MERN stack app that finds movies two or more actors, directors or producers made together, using The Movie Database (TMDB) API.",
@@ -39,6 +52,7 @@ const projects = [
   {
     _id: 4,
     title: "Book Search Engine",
+    image: bookSearch,
     category: "Full stack",
     about:
       "Search the Google Books API and save books to a personal reading list. Refactored from a REST API to GraphQL with Apollo Server, with JWT authentication.",
@@ -48,6 +62,7 @@ const projects = [
   {
     _id: 5,
     title: "MVC Tech Blog",
+    image: techBlog,
     category: "Full stack",
     about:
       "A CMS-style blog where developers publish posts and comment on each other's work. Secure logins with bcrypt and database-backed sessions.",
@@ -57,6 +72,7 @@ const projects = [
   {
     _id: 6,
     title: "Workout Tracker",
+    image: workout,
     category: "Full stack",
     about:
       "Log daily workouts and exercises, then review duration and weight trends for your last seven workouts on a stats dashboard.",
@@ -84,6 +100,7 @@ const projects = [
   {
     _id: 9,
     title: "Weather Dashboard",
+    image: weather,
     category: "Front end",
     about:
       "Current conditions and a 5-day forecast for any city from the OpenWeather API, with search history saved in the browser.",

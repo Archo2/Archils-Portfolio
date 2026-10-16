@@ -10,6 +10,15 @@ export const contact = {
   github: "https://github.com/Archo2",
 };
 
+export const availability = "Open to IT support, technical support and cybersecurity roles · Everett, WA · On-site, hybrid or remote";
+
+export const stats = [
+  { value: "20%", label: "team efficiency gain at Bucher Aerospace in six months" },
+  { value: "4 yrs", label: "troubleshooting hardware, software and connectivity issues" },
+  { value: "7", label: "certifications earned, with Security+ in progress" },
+  { value: "5", label: "languages spoken, including Swahili and Luganda" },
+];
+
 export const summary = [
   "Technical support professional with four years of experience troubleshooting hardware, software and connectivity issues and owning escalated cases through to resolution.",
   "At Bucher Aerospace I built a searchable issue-and-resolution database that improved team efficiency by 20% in six months, and I write the documentation colleagues rely on.",
@@ -112,5 +121,39 @@ export const skills = [
   {
     group: "Languages",
     items: ["English", "Dholuo (native)", "Luganda", "Swahili", "French (elementary)"],
+  },
+];
+
+// Workplaces and testimonials. Testimonials are recommendations received on LinkedIn.
+// Workplace names render as text; to show a logo, add the file to src/Assets/images
+// and set `logo`, only if the employer permits it.
+export const workplaces = [
+  { name: "Bucher Aerospace Corporation", logo: null },
+  { name: "Globalize Solutions", logo: null },
+  { name: "Clearwater Spas", logo: null },
+  { name: "Independent projects, Kenya and Uganda", logo: null },
+];
+
+export const testimonials = [
+  {
+    quote:
+      "I had the pleasure to collaborate with Archils on various application development projects. His profound grasp of threat modeling and risk assessment shone through in every assignment. Archils' collaborative spirit, analytical approach, keen eye for security, and meticulous attention to detail were invaluable. I highly endorse Archils for any cybersecurity position; his unmatched expertise and unwavering dedication make him an exceptional person you want to have in your team.",
+    name: "Honorine Ndom Ndzah",
+    role: "Software Engineer and Backend Engineer",
+    context: "Studied together, LinkedIn recommendation, May 2024",
+  },
+  {
+    quote:
+      "Working with Archils was a wonderful experience. He tackles every problem head-on. His dedication to expanding his web development knowledge is unmatched. He always took the time to discuss various topics during office hours to make sure he had a full grasp of every subject. If he ran into a bug in his code, he worked through it with a positive attitude. I was very impressed with how quickly he picked up JavaScript. He would be a great asset to any development team. Don't pass on Archils! I hope I get to work with him again in the future.",
+    name: "Jessica Morrison",
+    role: "Full Stack Web Developer",
+    context: "Archils's mentor, LinkedIn recommendation, October 2022",
+  },
+  {
+    quote:
+      "Archils is a skilled and knowledgable individual who is not afraid to try new things. He dedicates himself to learning fully, and is very resourceful. He was often one of the select few individuals who were consistently in office hours and extra help sessions in the Bootcamp we attended together, asking questions and making sure he understood both high and low level concepts. He creates unique, high quality applications that are easy to use and visually appealing. He is a highly valuable team member that would not only contribute significantly to the business, but be an essential asset to his team.",
+    name: "Gabrielle Humkey",
+    role: "Software Engineer",
+    context: "Worked on the same team, LinkedIn recommendation, September 2022",
   },
 ];
