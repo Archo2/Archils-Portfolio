@@ -1,5 +1,6 @@
 import React from "react";
 import { contact } from "../../utils/profile";
+import resume from "../../utils/pdf/Archils_Oburu_Resume.pdf";
 
 function Contact() {
   return (
@@ -9,6 +10,9 @@ function Contact() {
       <div className="contact-links">
         <a className="btn primary" href={`mailto:${contact.email}`}>
           <i className="fa fa-envelope" aria-hidden="true"></i> {contact.email}
+        </a>
+        <a className="btn" href={resume} download="Archils_Oburu_Resume.pdf">
+          <i className="fas fa-file-download" aria-hidden="true"></i> Download resume (PDF)
         </a>
         <a className="btn" href={contact.linkedin} target="_blank" rel="noopener noreferrer">
           <i className="fab fa-linkedin" aria-hidden="true"></i> LinkedIn

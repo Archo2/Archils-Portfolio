@@ -20,7 +20,7 @@ function Header() {
             cloud, security and full-stack skills to every support problem.
           </p>
           <div className="hero-actions">
-            <a className="btn primary" href={resume} target="_blank" rel="noopener noreferrer">
+            <a className="btn primary" href={resume} download="Archils_Oburu_Resume.pdf">
               Download resume
             </a>
             <a className="btn" href={`mailto:${contact.email}`}>

@@ -1,3 +1,4 @@
+import resume from "../../utils/pdf/Archils_Oburu_Resume.pdf";
 import React, { useEffect, useState } from "react";
 
 const links = [
@@ -59,6 +60,9 @@ function Navbar() {
             <a href={l.href} className={active === l.href.slice(1) ? "active" : undefined} aria-current={active === l.href.slice(1) ? "true" : undefined}>{l.label}</a>
           </li>
         ))}
+        <li>
+          <a href={resume} download="Archils_Oburu_Resume.pdf">Resume</a>
+        </li>
       </ul>
       <button
         type="button"
