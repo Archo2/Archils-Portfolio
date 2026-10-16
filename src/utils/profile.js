@@ -114,3 +114,34 @@ export const skills = [
     items: ["English", "Dholuo (native)", "Luganda", "Swahili", "French (elementary)"],
   },
 ];
+
+// Logos and testimonials. Entries with placeholder: true render as clearly marked
+// placeholders. Replace them with real text, and only use a logo file (add it to
+// src/Assets/images and set `logo`) if the employer permits it.
+export const workplaces = [
+  { name: "Bucher Aerospace Corporation", logo: null },
+  { name: "Globalize Solutions", logo: null },
+  { name: "Clearwater Spas", logo: null },
+  { name: "Independent projects, Kenya and Uganda", logo: null },
+];
+
+export const testimonials = [
+  {
+    quote: "Paste a short quote from a manager or colleague here.",
+    name: "Name",
+    role: "Title, company",
+    placeholder: true,
+  },
+  {
+    quote: "Paste a short quote from a teammate or customer here.",
+    name: "Name",
+    role: "Title, company",
+    placeholder: true,
+  },
+  {
+    quote: "Paste a short quote from an instructor or client here.",
+    name: "Name",
+    role: "Title, company",
+    placeholder: true,
+  },
+];

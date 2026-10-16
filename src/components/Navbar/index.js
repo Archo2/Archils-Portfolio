@@ -1,14 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const links = [
   { href: "#about", label: "About" },
   { href: "#experience", label: "Experience" },
   { href: "#skills", label: "Skills" },
   { href: "#projects", label: "Projects" },
+  { href: "#testimonials", label: "Testimonials" },
   { href: "#contact", label: "Contact" },
 ];
 
+function initialTheme() {
+  const set = document.documentElement.getAttribute("data-theme");
+  if (set === "dark" || set === "light") return set;
+  return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+}
+
 function Navbar() {
+  const [theme, setTheme] = useState(initialTheme);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+    try {
+      localStorage.setItem("theme", theme);
+    } catch (e) {
+      /* storage can be blocked; the toggle still works for this visit */
+    }
+  }, [theme]);
+
+  const next = theme === "dark" ? "light" : "dark";
+
   return (
     <nav className="navbar">
       <a className="brand" href="#home">Archils Oburu</a>
@@ -19,6 +41,15 @@ function Navbar() {
           </li>
         ))}
       </ul>
+      <button
+        type="button"
+        className="theme-toggle"
+        onClick={() => setTheme(next)}
+        aria-label={`Switch to ${next} mode`}
+        title={`Switch to ${next} mode`}
+      >
+        <i className={theme === "dark" ? "fas fa-sun" : "fas fa-moon"} aria-hidden="true"></i>
+      </button>
     </nav>
   );
 }
