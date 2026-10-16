@@ -70,6 +70,11 @@ function Projects({ projectProps: p }) {
               Live demo
             </a>
           )}
+          {p.admin && (
+            <a href={p.admin} target="_blank" rel="noopener noreferrer">
+              Admin dashboard (login required)
+            </a>
+          )}
         </div>
       </div>
     </article>
