@@ -17,7 +17,8 @@ const projects = [
     tech: ["Node.js", "Express", "MySQL", "M-Pesa Daraja", "MikroTik", "Nginx"],
     repo: `${GH}/Wachara-WiFi`,
     deploy: "https://wachara-wi-fi.vercel.app",
-    admin: "https://wachara-wi-fi.vercel.app/admin.html",
+    // Add admin dashboard screenshots here once exported, e.g.
+    // screenshots: [{ src: adminOverview, alt: "Admin dashboard: sessions and revenue" }],
   },
   {
     _id: 1,

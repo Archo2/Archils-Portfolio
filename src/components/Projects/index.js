@@ -59,6 +59,15 @@ function Projects({ projectProps: p }) {
             <li key={t}>{t}</li>
           ))}
         </ul>
+        {p.screenshots && p.screenshots.length > 0 && (
+          <div className="shots">
+            {p.screenshots.map((shot) => (
+              <a key={shot.src} href={shot.src} target="_blank" rel="noopener noreferrer">
+                <img src={shot.src} alt={shot.alt} loading="lazy" />
+              </a>
+            ))}
+          </div>
+        )}
         <div className="project-links">
           {p.repo && (
             <a href={p.repo} target="_blank" rel="noopener noreferrer">
@@ -68,11 +77,6 @@ function Projects({ projectProps: p }) {
           {p.deploy && (
             <a href={p.deploy} target="_blank" rel="noopener noreferrer">
               Live demo
-            </a>
-          )}
-          {p.admin && (
-            <a href={p.admin} target="_blank" rel="noopener noreferrer">
-              Admin dashboard (login required)
             </a>
           )}
         </div>
