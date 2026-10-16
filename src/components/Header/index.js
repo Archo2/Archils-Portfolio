@@ -1,5 +1,5 @@
 import React from "react";
-import me from "../../Assets/images/Archo.jpg";
+import me from "../../Assets/images/Archo-linkedin.jpg";
 import resume from "../../utils/pdf/Archils_Oburu_Resume.pdf";
 import { contact } from "../../utils/profile";
 
