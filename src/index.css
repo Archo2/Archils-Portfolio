@@ -121,8 +121,11 @@ a {
   flex-direction: column;
   gap: 40px;
   padding: 64px max(24px, calc((100% - 1000px) / 2)) 48px;
-  background: linear-gradient(160deg, var(--hero) 0%, #0d3a4a 140%);
+  background: linear-gradient(150deg, #0b5f7a 0%, #1580a0 100%);
   color: #fff;
+}
+:root[data-theme="dark"] .hero {
+  background: linear-gradient(160deg, var(--hero) 0%, #0d3a4a 140%);
 }
 .hero-main {
   display: flex;
@@ -176,6 +179,7 @@ a {
   font-size: 14px;
 }
 .hero-img {
+  filter: brightness(1.08) saturate(1.05);
   width: 200px;
   height: 200px;
   object-fit: cover;
