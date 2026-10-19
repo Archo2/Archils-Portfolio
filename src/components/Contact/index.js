@@ -5,7 +5,7 @@ function Contact() {
   return (
     <section id="contact" className="section contact">
       <h2 className="section-title">Contact</h2>
-      <p>Open to IT support, technical support and cybersecurity opportunities. The quickest way to reach me is email or LinkedIn.</p>
+      <p>Open to IT support, technical support, cybersecurity and AI opportunities. The quickest way to reach me is email or LinkedIn.</p>
       <div className="contact-links">
         <a className="btn primary" href={`mailto:${contact.email}`}>
           <i className="fa fa-envelope" aria-hidden="true"></i> {contact.email}

@@ -3,7 +3,7 @@
 
 export const contact = {
   name: "Archils Oburu",
-  headline: "Technical Support & Cybersecurity Professional | Full-Stack Developer",
+  headline: "IT Support | Technical Support | Cybersecurity | AI",
   location: "Everett, WA",
   email: "oburuarchils@gmail.com",
   linkedin: "https://www.linkedin.com/in/archilsoburu",
@@ -13,7 +13,7 @@ export const contact = {
 export const summary = [
   "Technical support professional with four years of experience troubleshooting hardware, software and connectivity issues and owning escalated cases through to resolution.",
   "At Bucher Aerospace I built a searchable issue-and-resolution database that improved team efficiency by 20% in six months, and I write the documentation colleagues rely on.",
-  "I hold Google and Microsoft cybersecurity certificates, Google Cloud credentials and a University of Washington full-stack development certificate, with CompTIA Security+ in progress. I'm comfortable across Windows, macOS and Microsoft 365, write SQL and Python, and have hands-on lab experience in AWS and Azure.",
+  "I hold Google and Microsoft cybersecurity certificates, Google Cloud credentials and a University of Washington full-stack development certificate and the Outskill Generative AI Bootcamp (October 2026), with CompTIA Security+ in progress. I'm comfortable across Windows, macOS and Microsoft 365, write SQL and Python, and have hands-on lab experience in AWS and Azure.",
 ];
 
 export const experience = [
@@ -85,6 +85,7 @@ export const certifications = [
   { name: "Splunk Master Certificate", detail: "Splunk" },
   { name: "Asana Certified Administrator", detail: "Asana" },
   { name: "Asana Workflow Specialist", detail: "Asana" },
+  { name: "Generative AI Bootcamp", detail: "Outskill, October 2026" },
   { name: "CompTIA Security+", detail: "In progress" },
 ];
 
